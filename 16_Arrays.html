@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays </title>
+</head>
+<body>
+   <h1>Arrays - Introduction </h1>
+    <h2>Arrays are variables which can hold more than one value.</h2>
+    
+
+    <script>
+    
+    let marks = [98, 56, 89, 76, 95, "Not Present", null];
+    console.log(marks);
+    console.log(marks[0]);
+    console.log(marks[1]);
+    console.log(marks[3]);
+    console.log(marks[4]);
+    console.log(marks[8]);// Will print undefined
+    
+    console.log("The Total Number of students in class is " + marks.length);
+    
+    // Changing value of array
+    (marks[2]) = 85;
+    console.log(marks[2]);
+    
+    // Adding value to Array
+    (marks[8]) = 34;
+    console.log(marks[8]);
+
+    // Arrays are special types of Objects.
+    console.log(typeof marks);
+
+    
+ 
+
+
+    </script>
+</body>
+</html>

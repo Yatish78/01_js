@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number || </title>
+    <link rel="stylesheet" href="style.css">
+
+   <style>
+       #para{
+           font-size: 35px;
+           color: Black;
+           padding: 20px 50px;
+           background-color: yellow;
+       }
+   </style>
+
+</head>
+<body>
+    
+    <!-- <h1>Excercise 1 </h1>
+    <h2>Question 1</h2>
+   <div class="qu">
+    <span class=question>
+        Write a javascript program to generate a random number and store it in a variable. The Program then takes an input from the user to tell them whether the guess was correct, greater or lower than the original number.
+
+        100 -- (number of guesses is the score of the user). The Program is expected to terminate once the number is guessed. Number should be between 1 - 100.
+    </span>
+   </div> -->
+<h1>Guess a Number Challenge!</h1>
+   Chances Left: <p class="chances"></p>
+   Score: <p class="score"></p>
+   <p id="para"></p>
+
+    <script>
+
+let a = Math.floor(Math.random() * 10);
+// console.log(a);
+        
+let n = prompt("Guess the number");
+n = Number.parseInt(n);
+
+function myfunction() {document.getElementById("para").innerHTML = "You won the match 😘😁😂😁😀😆😅😊"}
+function my2function(){document.getElementById("para").innerHTML = "You lost the match 🥲😑😐😒☹️🙁😞"}
+
+if(n == a){
+    myfunction()
+    console.log(a);
+    console.log(n);
+}
+else{
+    my2function()
+
+};
+
+    </script>
+
+
+</body>
+</html>

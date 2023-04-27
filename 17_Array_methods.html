@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods </title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <h1>JavaScript Array Methods and Properties   </h1>                                         
+   
+    <h1>concat()	</h1><h4>Joins arrays and returns an array with the joined arrays</h4>
+    
+    <h1>constructor	</h1><h4>Returns the function that created the Array object's prototype</h4>
+    
+    <h1>copyWithin()</h1><h4>	Copies array elements within the array, to and from specified positions  </h4>         
+    
+    <h1>entries()</h1><h4>	Returns a key/value pair Array Iteration Object</h4>
+    
+    <h1>every()	</h1><h4>Checks if every element in an array pass a test</h4>
+    
+    <h1>fill()</h1><h4>	Fill the elements in an array with a static value</h4>
+    
+    <h1>filter()</h1><h4>	Creates a new array with every element in an array that pass a test</h4>
+    
+    <h1>find()</h1><h4>	Returns the value of the first element in an array that pass a test</h4>
+    
+    <h1>findIndex()	</h1><h4>Returns the index of the first element in an array that pass a test</h4>
+    
+    <h1>forEach()	</h1><h4>Calls a function for each array element</h4>
+    
+    <h1>from()</h1><h4>	Creates an array from an object</h4>
+    
+    <h1>includes()</h1><h4>	Check if an array contains the specified element</h4>
+    
+    <h1>indexOf()</h1><h4>	Search the array for an element and returns its position</h4>
+    
+    <h1>isArray()	</h1><h4>Checks whether an object is an array</h4>
+    
+    <h1>join()</h1><h4>	Joins all elements of an array into a string</h4>
+    
+    <h1>keys()</h1><h4>	Returns a Array Iteration Object, containing the keys of the original array</h4>
+    
+    <h1>lastIndexOf()	</h1><h4>Search the array for an element, starting at the end, and returns its position</h4>
+    
+    <h1>length</h1><h4>	Sets or returns the number of elements in an array</h4>
+    
+    <h1>map()</h1><h4>	Creates a new array with the result of calling a function for each array element</h4>
+    
+    <h1>pop()</h1><h4>	Removes the last element of an array, and returns that element</h4>
+    
+    <h1>prototype</h1><h4>	Allows you to add properties and methods to an Array object</h4>
+    
+    <h1>push()</h1><h4>	Adds new elements to the end of an array, and returns the new length</h4>
+    
+    <h1>reduce()</h1><h4>	Reduce the values of an array to a single value (going left-to-right)</h4>
+    
+    <h1>reduceRight()</h1><h4>	Reduce the values of an array to a single value (going right-to-left)</h4>
+    
+    <h1>reverse()</h1><h4>	Reverses the order of the elements in an array</h4>
+    
+    <h1>shift()</h1><h4>	Removes the first element of an array, and returns that element</h4>
+    
+    <h1>slice()</h1><h4>	Selects a part of an array, and returns the new array</h4>
+    
+    <h1>some()</h1><h4>	Checks if any of the elements in an array pass a test</h4>
+    
+    <h1>sort()</h1><h4>	Sorts the elements of an array</h4>
+    
+    <h1>splice()</h1><h4>	Adds/Removes elements from an array</h4>
+    
+    <h1>toString()</h1><h4>	Converts an array to a string, and returns the result</h4>
+    
+    <h1>unshift()</h1><h4>	Adds new elements to the beginning of an array, and returns the new length</h4>
+    
+    <h1>valueOf()</h1><h4>	Returns the primitive value of an array</h4>
+
+  
+
+    <script>
+let num = [1, 2, 3, 34, 4];
+// toString()
+let b = num.toString();
+console.log(b);
+console.log(typeof b)
+
+// Join
+
+let c = num.join(" and ");
+console.log(c);
+console.log(typeof c)
+
+// pop()
+
+let n = [1, 2, 3];
+n.pop()
+console.log(n);
+
+let r = n.pop();
+// r is popped element
+console.log(n, r);
+
+// push()
+
+let numbers = [5, 7, 3, 8, 2];
+numbers.push(189);
+
+console.log(numbers);
+// console.log(numbers)
+
+// Shift
+
+let m = numbers.shift();
+console.log(m);
+
+console.log(numbers);
+
+// Unshift
+
+let mn = numbers.unshift(545);
+console.log(mn, numbers);
+
+console.log(numbers);
+
+    </script>
+
+
+</body>
+</html>

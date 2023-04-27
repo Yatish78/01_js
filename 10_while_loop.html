@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loops</title>
+</head>
+<body>
+   
+    <p>This is a code of while loop</p>
+    
+
+    <script>
+
+// While loop
+
+// Syntax of while loop
+
+// While(condition){
+    //code to be executed 
+//}
+
+// Warning: If the condtion never becomes false, the loop will never end and this might crash the runtime.
+
+// While loop
+
+let n = prompt("Enter value of n");
+n = Number.parseInt(n)
+let i = 0;
+while(i < n){
+    console.log(i)
+    i++;
+};
+
+// Do While Loop
+
+let m = prompt("Enter value of n");
+m = Number.parseInt(m)
+let t = 10;
+
+do{
+    console.log(t)
+    t++;
+}
+while(t < m)
+;
+
+// If we put the value of m lesser than t but it will still print the value of m once which is not the case with while loop.
+
+// do{
+//     console.log(t)
+//     t++;
+// }
+// while(t < m)
+// ;
+
+// do loop is executed first and then condition in while block is checked. If the condition is true it will continue printing but if condition is false, it will stop.
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

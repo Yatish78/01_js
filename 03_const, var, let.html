@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_const, var and let</title>
+</head>
+<body>
+    
+<script>
+
+//Var
+// var can be decleared for multiple times.
+// var is used in old codes.
+
+//Let
+// let can't be decleared twice.
+//But its value can be changed.
+
+//Const
+//Const can't be decleared twice.
+//Const value can't be changed.
+
+//Var
+var a = 6;
+console.log(a);
+ var a = 7;
+
+ console.log(a);
+
+
+//Let
+
+let name = "harry";
+console.log(name);
+// let name can't be decleared twice.
+
+name = "Nayyar";
+console.log(name);
+
+
+//Const
+
+const age = 7;
+
+console.log(age);
+
+
+
+let m = "shyam outside";
+
+{
+    let m = "shyam";
+    console.log(m);
+    // function written in {} this parenthesis function only in the {};
+}
+
+console.log(m);
+
+
+
+</script>
+
+</body>
+</html>

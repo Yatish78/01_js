@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set on Loops and Functions</title>
+</head>
+<body>
+    
+    <p>This is JS Ch-3</p>
+    <p>This is practice set on Loops and Functions</p>
+
+
+<script>
+// Problem No 1
+let marks = {
+    harry: 90,
+    Shubham: 50,
+    Lovish: 40,
+    Mohan: 57
+}
+
+for(let i=0; i<Object.keys(marks).length; i++){
+    console.log("The marks of " + Object.keys(marks)[i] + " is " + marks[Object.keys(marks)[i]]); 
+};
+
+
+// Problem No 2.
+
+// for(let i in marks){
+//     console.log(i)
+// }
+
+// Above code will print keys
+
+for(let key in marks){
+    console.log("The marks of " + key + " is " + marks[key]);
+}
+
+
+// Problem No 3
+
+let cn = 4;
+let i;
+while(i != cn){
+    alert("Try again");
+    i = prompt("Enter a number");
+}
+alert("You eneterd a correct number");
+
+
+// Problem No 4 by General function
+
+function means(p, q){
+return ((p + q ) / 2);
+
+
+}
+console.log(means(1, 2));
+
+// Problem No 4 by Arrow function
+
+const mean = (a, b, c, d) => {
+return ((a + b + c + d) / 4);
+};
+
+console.log(mean(2, 3, 4, 5));
+
+</script>
+
+</body>
+</html>

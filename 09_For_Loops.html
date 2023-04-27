@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops in JS</title>
+</head>
+<body>
+
+    
+
+
+<script>
+//Loops  types
+// For Loops
+//For in loop
+// For of Loops
+// While Loops
+// Do-while loop
+
+// For loop
+for(let i=0; i < 3; i++){
+    console.log(i)
+};
+
+// Syntax of for loop
+/* for(statement1; statement 2; statement3){
+ // code to be executed
+}*/
+
+// Statement 1 is executed once
+// Statement 2 is the condition base on which the loop runs.
+//Statement 3 is executed everytime the loop body is executed
+
+for(let age=0; age < 2; age++){
+    console.log(age);
+};
+
+
+for(let age2=0; age2 < 2; age2++){
+    console.log(age2 + 1);
+};
+
+
+// Program to sum n natural number
+
+let sum = 0
+let n = prompt("Enter the n");
+n = Number.parseInt(n);
+for(let s = 0; s < n; s++){
+     sum += (s+1);
+
+//    console.log((s+1),  " + ") 
+//    console.log((s+1) + " + ") 
+
+}
+console.log("Sum of first " + n + " natural number is " + sum);
+// If now write console.log(s); will give error because let s is in scope and let is scoped level 
+// While this is not the case with var.
+
+
+// For in loop
+
+let obj = {
+    harry: 90,
+    shubh: 45,
+    shivika: 56,
+    Ritika:56,
+    Shiv:23
+};
+
+// To print keys of Object
+
+// for(let a in obj){
+//     console.log(a);
+//     //This will print all the keys of object.
+// }
+
+
+for(let a in obj){
+    console.log("Marks of " + a + " is " + obj[a]);
+    
+};
+
+// For Of Loop
+
+for(let b of "Harry"){
+    console.log(b);
+    
+};
+
+</script>
+
+</body>
+</html>

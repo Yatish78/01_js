@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chapter 5 || Practice set on Arrays</title>
+</head>
+<body>
+    <h1>Javascript Chapter 5 || Practice set on Arrays</h1>
+
+    <script>
+
+        // Qusetion 1
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+        console.log(arr);
+        let a = prompt("Enter a number ");
+        a = Number.parseInt(a);
+
+        arr.push(a);
+        console.log(arr);
+        
+        // Question 2
+
+        
+        let arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+        console.log(arr2);
+         
+        do {
+            var a2 = prompt("Enter a Number");
+            a2 = Number.parseInt(a2);
+          arr2.push(a2);
+        } while (a2 != 0);4
+        
+        console.log(arr2);
+
+
+      // Question 3
+
+        let arr3 = [2, 20, 30, 4, 5, 0, 8, 9, 3, 100, 40, 60];
+
+       let  m = arr3.filter((d)=>{
+        return   d % 10 == 0});
+       console.log(m);
+
+    //     Question 4
+        let n1 = prompt("Enter number");
+        n1 = Number.parseInt(n1);
+        let n2 = prompt("Enter number");
+        n2 = Number.parseInt(n2);
+        let n3 = prompt("Enter number");
+        n3 = Number.parseInt(n3);
+        let n4 = prompt("Enter number");
+        n4 = Number.parseInt(n4);
+        let n5 = prompt("Enter number");
+        n5 = Number.parseInt(n5);
+
+        let arrn = [n1**=2, n2**=2, n3**=2, n4**=2, n5**=2];
+        console.log(arrn);
+        
+
+        // Question 4 using map 
+        let arrn1 = [2, 4, 6, 7, 3, 4, 8];
+
+        let nsquare = arrn1.map((msquare)=>{
+            return msquare **=2;
+        });
+
+        console.log(nsquare);
+
+        // Question 5 -- To find square
+        for(let ni= 0;  ni<10; ni++){
+        console.log(ni ** 2);
+      
+    };
+
+// Question 5 To find factorial
+        let arrl = [1, 2, 3, 4];
+        let arrf = arrl.reduce((x1, x2) => {
+            return x1 * x2;
+        });
+        console.log(arrf);
+
+
+
+
+
+
+
+
+        // Logic code witten by me but didn't worked.
+
+        // let a2 = prompt("Enter a number ");
+        //     do{);
+    //     a2 = Number.parseInt(a2);
+    // alert("Try again");}
+    //     while(a2 != 0);
+
+
+//         if(a2 != 0){
+// alert("Try again");
+// a2 = prompt("Enter the number");
+//         }
+//         else(console.log("Ok"));
+// Above comments code not worked.
+
+        
+
+    </script>
+
+
+</body>
+</html>

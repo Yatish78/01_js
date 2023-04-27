@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Strings - Js 04 Practice set</title>
+</head>
+<body>
+    
+
+    <script>
+       // Chapter 4 
+       // Question No 1
+
+       let str = "Harry\"";
+       console.log(str.length);
+
+       // Question 2
+
+       let boy1 = "Harry"
+      let sentence = "The person, Harry is good."
+       console.log(`The Word "${boy1}" ${sentence.includes(boy1) ? 'is' : 'is not'} in the sentence`)
+       
+
+       console.log(sentence.includes(boy1)); 
+       // Prints true
+
+// Question 3
+
+ let speech = "The dogs were barking in the street";
+ console.log(speech.toLowerCase());
+
+ // Question 4
+
+ let str2 = "The amount is 1000";
+
+ console.log(str2.slice("The amount is ".length));
+
+ let friend = "Ramu";
+ friend[3] = "h"
+ console.log(friend);
+ // It wont change the letter because strings are immutable.
+
+ 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in Javascript</title>
+</head>
+<body>
+    
+    <h1>Functions in Javascript</h1>
+    <h2>Seperations of logic is done using functions in js</h2>
+    <h2>Functions helps us not to copy paste code block for many times</h2>
+
+<script>
+    // Function
+    // Function(){//code to be executed}
+function oneplusavg(x, y){
+    return Math.round(1+ (x + y)/2);
+    // Math.round is used to roundoff
+    console.log("Done");
+}
+
+
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+
+
+
+console.log("One plus Average of a and b is ", oneplusavg(a, b));
+// console.log("DONE");''
+
+console.log("One plus Average of c and b is ",oneplusavg(a, b));
+// console.log("DONE");
+
+
+console.log("One plus Average of c and a is ", oneplusavg(a, b));
+// console.log("DONE");
+
+const sum = (p, q)=>{
+    return p + q;
+}
+
+console.log(sum(9, 7));
+
+// Arrow function syntax below
+
+const hello = () => {
+    console.log("Hello, How are you? I am fine.");
+    return ("Hi");
+}
+
+// let v = hello();
+// console.log(v);
+
+
+// console.log(hello());
+
+hello();
+
+// Three metods to call a function are above.
+
+</script>
+
+
+</body>
+</html>

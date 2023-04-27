@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More_Array_methods</title>
+</head>
+<body>
+    
+<h1>
+    More_Array_methods
+</h1>
+
+<h2>Deleting an array element doesn't affect its length</h2>
+<script>
+    
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(num.length);
+
+// delete num[0];
+// console.log(num.length);
+
+//Deleting an array element doesn't affect its length
+
+let num_more = [11, 12, 13, 14, 15, 16, 17, 18, 19];
+let num_even_more = [118, 128, 138, 148, 158, 168, 178, 188, 198];
+
+let newArray = num.concat(num_more, num_even_more);
+console.log(num);
+console.log(num_more);
+console.log(newArray);
+
+// Sort Method
+// Sort method will short alphabetically.
+
+let num2 = [14, 27, 34, 1000, 41, 15, 16, 57, 86, 19, 200];
+
+num2.sort();
+
+console.log(num2);
+
+// Sort method continues
+
+let compare = (a, b) => {
+return a - b;
+// It will sort by asscending order
+// To sort by descending type b-a
+
+}
+
+let nums = [14, 27, 34, 1000, 41, 15, 16, 57, 86, 19, 200];
+
+nums.sort(compare);
+
+console.log(nums);
+
+// Reverse
+// reverse the array
+
+nums.reverse();
+console.log(nums);
+
+// Splice
+
+// Splice can be used to add new items to an array.
+
+// Splice syntax
+// var.splice(a, b, c, d, ....)
+// where a = index no.
+// b = no. of elements to be removed
+// c, d, ... = elements to be added in array
+
+let ages = [34, 65, 78, 67, 95, 45, 63];
+ages.splice(2, 3, 1021, 1022, 1023, 1026, 1027);
+console.log(ages);
+
+
+let ages2 = [34, 65, 78, 67, 95, 45, 63];
+let deleted_ages = ages2.splice(2, 3, 1021, 1022, 1023, 1026, 1027);
+console.log(ages2);
+console.log(deleted_ages);
+
+// Slice
+// Slices out a piece from an array. It creates a new array.
+
+const price = [11, 22, 13, 44, 56, 87, 99, 56, 88];
+let price2 = price.slice(2);
+console.log(price2);
+// will print elements from index 2 to last
+
+let price3 = price.slice(1, 3);
+console.log(price3);
+// Will print 22, 13 which is 1st and 2nd element
+// The last one 3rd is not included.
+console.log(price);
+
+
+
+</script>
+
+</body>
+</html>

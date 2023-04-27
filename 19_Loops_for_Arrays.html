@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Loops with Arrays </title>
+</head>
+<body>
+   
+    <h1>Using Loops with Arrays</h1>
+
+    <script>
+
+// let num = [4, 53, 56, 76, 2, 3, 1, 7];
+
+// for(let i=0; i<num.length; i++){
+//     console.log(num[i]);
+// };
+
+
+// For each loop
+let n = [4, 53, 56, 76, 2, 3, 1, 7];
+
+n.forEach((element)=> {
+ console.log(element * element);
+//  console.log(element);
+});
+
+// Array.from
+// Used to create an array from any other object.
+
+let name ="harry";
+let arr = Array.from(name);
+console.log(arr);
+
+
+// For of loop for array
+
+for (let i of n){
+    console.log(i);
+};
+
+// For in loop for array
+let m = [1, 2, 3, 4, 5, 6]
+for (let i in m){
+    console.log(i);
+    // will return keys 0, 1, 2, 3, 4, 5
+    console.log(m[i]);
+    // will return values 1, 2, 3, 4, 5, 6.
+};
+
+
+
+
+
+    </script>
+
+</body>
+</html>

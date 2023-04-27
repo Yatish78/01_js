@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice set -2|| Practice set on operators and Conditionals|| Switch case statemnt</title>
+</head>
+<body>
+    
+   <script>
+
+// let a = prompt("What is your age")
+
+//     switch (a<=0) {
+//         case console.log("Invalid age"):
+            
+//             break;
+    
+//         default console.log("Doesn't match any case"):
+//             break;
+//     }
+
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+console.log(Date());
+
+
+
+let x = 5;
+
+switch (x = 10){
+    case 6: 
+    alert("Value of a is 6");
+    break;
+
+    case 5: 
+    alert("Value of x is 5");
+break;
+
+default: 
+alert("This is default option");
+
+}
+ 
+let fruits = "Apple";
+
+switch (fruits = "Banana") {
+ 
+case
+ "Banana":
+    alert("Hello")
+    break;
+ 
+case
+ "Apple":
+    alert("Welcome")
+    break;    
+}
+
+
+
+
+let opinion = prompt("Do you want to use this calculator?");
+
+switch (opinion){
+    case "yes":
+        {alert("You can use this.")}
+break;
+        case "no":
+            {alert("You can't use this")}
+
+            break;
+
+            default:
+                {alert("Invalid response")};
+}
+
+
+function myfun(){
+let x = prompt("write first value to add");
+let y = prompt("Write second value to add");
+x = Number.parseInt(x);
+y = Number.parseInt(y); 
+
+alert(x + y);
+};
+
+
+// Qns 1.
+let age = prompt("What is your age");
+
+if(age>10 && age<20){
+  alert("Your age lies between 10 and 20")
+}
+
+else{
+  alert("Your age doesn't lies between 1o and 20")
+};
+
+// Qns 2. Demonstrate use of switch-case statement.
+
+let time = prompt("What is time now");
+time = Number.parseInt(time);
+switch (time){
+  case 5:
+
+    alert("This is day");
+  break;
+
+  case 12:
+    alert("This is afternoon");
+    break;
+
+    default:
+      alert("This is default option");
+      break;
+}
+
+// Qns  3.
+let num = prompt("What's your number");
+num = Number.parseInt(num);
+if(num % 2 == 0 && num % 3 == 0){
+ alert("Your nummber is divisible by 2, 3 & 6");
+}
+
+else{
+  alert("Your number is not divisible by 2, 3, & 6");
+}
+
+// Qns 4.
+let number = prompt("What's your number");
+number = Number.parseInt(number);
+if(number % 2 == 0){
+ alert("Your nummber is divisible by 2");
+}
+
+else if(number % 3 == 0){
+  alert("Your number is not divisible by  3");
+}
+
+else if(number % 2 == 0 && num % 3 == 0){
+ alert("Your nummber is divisible by 2, 3 & 6");
+}
+
+else{
+  alert("Your number is neither divisible by 2 nor 3");
+};
+
+// Qns 5.
+
+let k = prompt("What's your age for driving");
+k = Number.parseInt(k);
+let right = k>18? "You can drive" : "You can't drive";
+
+alert(right);
+
+
+
+
+
+</script>
+
+</body>
+</html>
